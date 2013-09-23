@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/pure.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="geral">
+            <h1> CheatSheets do Ensino Médio </h1>
+
+            <div class="indice">
+                <ul class="pure-paginator">
+                    <li><a class="pure-button spec pure-button-active" data-num="0" href="#">Início</a></li>
+                    <li><a class="pure-button spec" data-num="1-1" href="#" title="Cinemática">1.1</a></li>
+                    <li><a class="pure-button spec" data-num="1-2" href="#" title="Mecânica">1.2</a></li>
+                    <li><a class="pure-button spec" data-num="1-3" href="#" title="Estática">1.3</a></li>
+                    <li><a class="pure-button spec" data-num="2-1" href="#" title="Termologia">2.1</a></li>
+                    <li><a class="pure-button spec" data-num="2-2" href="#" title="Ondulatória">2.2</a></li>
+                    <li><a class="pure-button spec" data-num="2-3" href="#" title="Óptica">2.3</a></li>
+                </ul>
+                <div class="monitor" data-num="0">
+                    <h3> CheatSheet de Física </h3>
+                    <p>Esse é um resumo das fórmulas de Física baseado no livro "Tópicos de Física" de Ricardo Helou Doca, Gualter José Biscuola e Newton Villas Bôas. O objetivo é colocar, em uma página simples, da maneira mais fácil possível, as principais fórmulas apresentadas no livro.</p>
+                    <p>Esse site funciona também em celulares e dispositivos móveis.</p>
+                    <p>Se faltar alguma fórmula ou existir alguma sugestão, por favor, me avise. Mande um email para <a href="mailto:victosenam@gmail.com">victorsenam@gmail.com</a> ou contribua pelo <a href="http://github.com/">GitHub</a></p>
+                </div>
+                <div class="monitor hidden" data-num="1-1">
+                    <h3> Livro I - Parte I: Cinemática </h3>
+                    <ol>
+                        <li><a href="#1-1-1">Bases</a></li>
+                        <li><a href="#1-1-2">Movimento Uniforme</a></li>
+                        <li><a href="#1-1-3">Movimento Circular</a></li>
+                        <li><a href="#1-1-4">Vetores</a></li>
+                        <li><a href="#1-1-5">Tangencial e Centrípeta</a></li>
+                    </ol>
+                </div>
+                <div class="monitor hidden" data-num="1-2">
+                    <h3> Livro I - Parte II: Dinâmica </h3>
+                    <ol>
+                        <li><a href="#1-2-1">Força e Peso</a></li>
+                        <li><a href="#1-2-2">Elásticos e Atrito</a></li>
+                        <li><a href="#1-2-3">Tangencial e Centrípeta</a></li>
+                        <li><a href="#1-2-4">Trabalho e Potência</a></li>
+                        <li><a href="#1-2-5">Energia Cinética</a></li>
+                        <li><a href="#1-2-6">Quantidade de Movimento</a></li>
+                    </ol>
+                    <p>Os tópicos relacionados a Gravitação foram ignorados.</p>
+                </div>
+                <div class="monitor hidden" data-num="1-3">
+                    <h3> Livro I - Parte III: Estática </h3>
+                    <ol>
+                        <li><a href="#1-3-1">Sólidos</a></li>
+                        <li><a href="#1-3-2">Fluidos</a></li>
+                    </ol>
+                </div>
+                <div class="monitor hidden" data-num="2-1">
+                    <h3> Livro II - Parte I: Termologia </h3>
+                    <ol>
+                        <li><a href="#2-1-1">Temperatura</a></li>
+                    </ol>
+                </div>
+                <div class="monitor hidden" data-num="2-2">
+                    <h3> Livro II - Parte II: Ondulatória </h3>
+                    <ol>
+                        <li><a href="#2-2-1">Movimento Harmônico Simples</a></li>
+                    </ol>
+                </div>
+                <div class="monitor hidden" data-num="2-3">
+                    <h3> Livro II - Parte III: Óptica </h3>
+                    <ol>
+                        <li><a href="#2-3-1">Fundamentos</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <button class="pure-button toggler menos-simples" data-classe="diff" data-add="article">Tudo Mais Simples</button>
+            <button class="pure-button toggler mais-simples" data-classe="diff" data-remove="article">Tudo Mais Complexo</button>
+
+            <article id="1-1">
+                <h2>Cinemática</h2>
+                <button class="pure-button toggler menos-simples" data-classe="diff" data-add="#1-1">Mais Simples</button>
+                <button class="pure-button toggler mais-simples" data-classe="diff" data-remove="#1-1">Mais Complexo</button>
+                <div class="pure-g-r">
+                    <div class="pure-u-2-3">
+                        <h3><a name="1-1-1">Bases da Cinemática</a></h3>
+                        <ul class="formulas">
+                            <li class="menos-simples">
+                                v<sub>m</sub> = Δs / Δt
+                                <span class="d">Velocidade Escalar Média </span>
+                            </li>
+                            <li class="mais-simples">
+                                v = s / t
+                                <span class="d">Velocidade </span>
+                            </li>
+                            <li class="menos-simples">
+                                a<sub>m</sub> = Δv / Δt
+                                <span class="d">Aceleração Escalar Média </span>
+                            </li>
+                            <li class="mais-simples">
+                                a = v / t
+                                <span class="d">Aceleração </span>
+                            </li>
+                        </ul>
+
+                        <h3><a name="1-1-2">M.R.U. e M.R.U.V.</a></h3>
+                        <ul class="formulas">
+                            <li class="menos-simples">
+                                s = s<sub>0</sub> + v.t
+                                <span class="d">Movimento Retilíneo Uniforme</span>
+                            </li>
+                            <li>
+                                s = s<sub>0</sub> + (a.t<sup>2</sup> / 2) 
+                                <span class="d menos-simples">Movimento Retilíneo Uniformemente Variado</span>
+                                <span class="d mais-simples">Sorvetão</span>
+                            </li>
+                            <li>
+                                v = v<sub>0</sub> + a.t 
+                                <span class="d menos-simples">Velocidade Escalar Instantânea</span>
+                                <span class="d mais-simples">Vovô Ateu</span>
+                            </li>
+                            <li>
+                                v<sup>2</sup> = v<sub>0</sub><sup>2</sup> + 2a.Δs
+                                <span class="d">Torricelli</span>
+                            </li>
+                        </ul>
+
+                        <h3><a name="1-1-3">M.C.U. e M.C.U.V.</a></h3>
+                        <ul class="formulas">
+                            <li class="menos-simples">
+                                φ = s / R
+                                <span class="d">Espaço Angular</span>
+                            </li>
+                            <li class="menos-simples">
+                                φ = φ<sub>0</sub> + ω.t
+                                <span class="d">Espaço Angular</span>
+                            </li>
+                            <li class="menos-simples">
+                                ω = φ / t = v / R
+                                <span class="d">Velocidade Angular</span>
+                            </li>
+                            <li>
+                                ω = 2π / T = 2πf
+                                <span class="d">Velocidade Angular</span>
+                            </li>
+                            <li>
+                                f = 1 / T
+                                <span class="d">Frequência e Período</span>
+                            </li>
+                        </ul>
+                        
+                        <h3><a name="1-1-4">Vetores</a></h3>
+                        <p class="menos-simples">O estudo de vetores é o de Geometria, você deve conseguir fazer as seguites operações com vetores para ter segurança.</p>
+                        <ul class="formulas">
+                            <li>Adição</li>
+                            <li>Subtração</li>
+                            <li>Decomposição</li>
+                            <li>Adição</li>
+                        </ul>
+
+                        <h3 class="menos-simples"><a name="1-1-5">Tangencial e Centrípeta (básico)</a></h3>
+                        <p class="menos-simples">Para esse tópico, o A vai ser considerado como o vetor de intensidade a[N].</p>
+                        <ul class="menos-simples formulas">
+                            <li>
+                                |A<sub>t</sub>| = |a| 
+                                <span class="d">Aceleração Tangencial</span>
+                            </li>
+                            <li>
+                                |A<sub>cp</sub>| = v<sup>2</sup> / R
+                                <span class="d">Aceleração Centrípeta</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pure-u-1-3 unidades">
+                        <ul class="tipo1">
+                            <li>
+                                <span class="n">v</span> <span class="u">[m/s]</span> <span class="d">Velocidade</span>
+                            </li>
+                            <li>
+                                <span class="n">a</span> <span class="u">[m/s<sup>2</sup>]</span> <span class="d">Aceleração</span>
+                            </li>
+                            <li>
+                                <span class="n">s</span> <span class="u">[m]</span> <span class="d">Distância</span>
+                            </li>
+                            <li>
+                                <span class="n">t</span> <span class="u">[s]</span> <span class="d">Tempo</span>
+                            </li>
+                        </ul>
+                        <ul class="tipo2">
+                            <li class="menos-simples">
+                                <span class="n">R</span> <span class="u">[m]</span> <span class="d">Raio</span>
+                            </li>
+                            <li>
+                                <span class="n">φ</span> <span class="u">[rad]</span> <span class="d">Espaço Angular</span>
+                            </li>
+                            <li>
+                                <span class="n">ω</span> <span class="u">[rad/s]</span> <span class="d">Velocidade Angular</span>
+                            </li>
+                            <li>
+                                <span class="n">f</span> <span class="u">[Hz]</span> <span class="d">Frequência</span>
+                            </li>
+                            <li>
+                                <span class="n">T</span> <span class="u">[s]</span> <span class="d">Período</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="1-2">
+                <h2>Dinâmica</h2>
+                <button class="pure-button toggler menos-simples" data-classe="diff" data-add="#1-2">Mais Simples</button>
+                <button class="pure-button toggler mais-simples" data-classe="diff" data-remove="#1-2">Mais Complexo</button>
+
+
+                <div class="pure-g-r">
+                    <div class="pure-u-2-3">
+                        <h3><a name="1-2-1">Força e Peso</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                F = m . a
+                                <span class="d">Força</span>
+                            </li>
+                            <li class="menos-simples">
+                                P = m . g
+                                <span class="d">Força Peso</span>
+                            </li>
+                        </ul>
+
+                        <h3><a name="1-2-2">Elásticos e Atrito</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                F = k . Δx
+                                <span class="d">Lei de Hooke</span>
+                            </li>
+                            <li class="mais-simples">
+                                F<sub>at</sub> = μ . F<sub>n</sub>
+                                <span class="d">Força de Atrito</span>
+                            </li>
+                            <li class="menos-simples">
+                                F<sub>at<sub>e</sub></sub> = μ<sub>e</sub> . F<sub>n</sub>
+                                <span class="d">Força de Atrito Estático</span>
+                            </li>
+                            <li class="menos-simples">
+                                F<sub>at<sub>d</sub></sub> = μ<sub>d</sub> . F<sub>n</sub>
+                                <span class="d">Força de Atrito Dinâmico</span>
+                            </li>
+                        </ul>
+                        
+                        <h3><a name="1-2-3">Tangencial e Centrípeta</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                F<sub>t</sub> = m . |a|
+                                <span class="d">Componente Tangencial</span>
+                            </li>
+                            <li>
+                                F<sub>cp</sub> = m . v<sup>2</sup> / R
+                                <span class="d">Componente Centrípeta</span>
+                            </li>
+                            <li class="menos-simples">
+                                M.R.U. <span class="c">Resultante Nula</span>
+                            </li>
+                            <li class="menos-simples">
+                                M.R.U.V. <span class="c">Resultante Tangencial</span>
+                            </li>
+                            <li class="menos-simples">
+                                M.C.U. <span class="c">Resultante Centrípeta</span>
+                            </li>
+                            <li class="menos-simples">
+                                M.C.U.V. <span class="c">Resultante com Tangencial e Centrípeta</span>
+                            </li>
+                        </ul>
+                        
+                        <h3><a name="1-2-4">Trabalho e Potência</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                δ = F . d . cos ϴ 
+                                <span class="d">Trabalho</span>
+                            </li>
+                            <li class="menos-simples">
+                                δ = P . h
+                                <span class="d">Trabalho Vertical (subida - e descida +)</span>
+                            </li>
+                            <li class="menos-simples">
+                                δ = K . (Δx)<sup>2</sup> 
+                                <span class="d">Trabalho Elástico (deformação - e retorno +)</span>
+                            </li>
+                            <li class="menos-simples">
+                                δ = ΔE<sub>c</sub> = E<sub>c<sub>final</sub></sub> - E<sub>c<sub>inicial</sub></sub> 
+                                <span class="d">Teorema do Trabalho</span>
+                            </li>
+                            <li>
+                                Pot = δ / t 
+                                <span class="d">Potência</span>
+                            </li>
+                            <li class="menos-simples">
+                                Pot = F . v . cos ϴ 
+                                <span class="d">Potência e Velocidade</span>
+                            </li>
+                            <li class="menos-simples">
+                                Pot<sub>u</sub> = Pot<sub>r</sub> - Pot<sub>d</sub> 
+                                <span class="d">Potência Útil</span>
+                            </li>
+                            <li>
+                                η = Pot<sub>u</sub> / Pot<sub>r</sub> 
+                                <span class="d">Rendimento</span>
+                            </li>
+                        </ul>
+
+                        <h3><a name="1-2-5">Energia Cinética</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                E<sub>c</sub> = m . v<sup>2</sup> / 2
+                                <span class="d">Energia Cinética</span>
+                            </li>
+                            <li>
+                                E<sub>p</sub> = P . h
+                                <span class="d">Energia Potencial da Gravidade</span>
+                            </li>
+                            <li>
+                                E<sub>p</sub> = k . (Δx)<sup>2</sup> / 2
+                                <span class="d">Energia Potencial Elástica</span>
+                            </li>
+                            <li class="menos-simples">
+                                E<sub>p</sub> + E<sub>c</sub> = Constante
+                                <span class="d">Princípio da Conservação</span>
+                            </li>
+                        </ul>
+
+                        <h3><a name="1-2-6">Quantidade de Movimento</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                I = F . t
+                                <span class="d">Impulso</span>
+                            </li>
+                            <li>
+                                Q = m . v
+                                <span class="d">Quantidade de Movimento</span>
+                            </li>
+                            <li>
+                                I = ΔQ
+                                <span class="d">Teorema do Impulso</span>
+                            </li>
+                            <li class="menos-simples">
+                                V<sub>r<sub>a,b</sub></sub> = |v<sub>a</sub> - v<sub>b</sub>|
+                                <span class="d">Velocidade Relativa</span>
+                            </li>
+                            <li class="menos-simples">
+                                e = v<sub>r<sub>inicial</sub></sub> - v<sub>r<sub>final</sub></sub>
+                                <span class="d">Restituição de Colisões (de 0 a 1)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pure-u-1-3 unidades">
+                        <ul class="tipo1">
+                            <li>
+                                <span class="n">a</span> <span class="u">[m/s<sup>2</sup>]</span> <span class="d">Aceleração</span>
+                            </li>
+                            <li>
+                                <span class="n">m</span> <span class="u">[kg]</span><span class="d">Massa</span>
+                            </li>
+                            <li>
+                                <span class="n">F</span> <span class="u">[N]</span> <span class="d">Força</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">g</span> <span class="u">[m/s<sup>2</sup>]</span> <span class="d">Gravidade</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">P</span> <span class="u">[N]</span> <span class="d">Peso</span>
+                            </li>
+                        </ul>
+                        <ul class="tipo2">
+                            <li class="menos-simples">
+                                <span class="n">Δx</span> <span class="u">[m]</span> <span class="d">Deformação</span>
+                            </li>
+                            <li>
+                                <span class="n">k</span> <span class="u">[N/m]</span> <span class="d">Constante Elástica</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">F<sub>at</sub></span> <span class="u">[N]</span> <span class="d">Força de Atrito</span>
+                            </li>
+                            <li>
+                                <span class="n">μ</span> <span class="u"></span> <span class="d">Coeficiente de Atrito</span>
+                            </li>
+                        </ul>
+                        <ul class="tipo3 menos-simples">
+                            <li>
+                                <span class="n">F<sub>n</sub></span> <span class="u">[N]</span> <span class="d">Força Normal</span>
+                            </li>
+                            <li>
+                                <span class="n">F<sub>t</sub></span> <span class="u">[N]</span> <span class="d">Força Tangencial</span>
+                            </li>
+                            <li>
+                                <span class="n">F<sub>cp</sub></span> <span class="u">[N]</span> <span class="d">Força Centrípeta</span>
+                            </li>
+                        </ul>
+                        <ul class="tipo1">
+                            <li>
+                                <span class="n">δ</span> <span class="u">[J]</span> <span class="d">Trabalho</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">E<sub>c</sub></span> <span class="u">[J]</span> <span class="d">Energia Cinética</span>
+                            <li>
+                                <span class="n">Pot</span> <span class="u">[W]</span> <span class="d">Potência</span>
+                            </li>
+                            <li>
+                                <span class="n">η</span> <span class="d">Rendimento</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">Pot<sub>r</sub></span> <span class="u">[W]</span> <span class="d">Potência Recebida</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">Pot<sub>u</sub></span> <span class="u">[W]</span> <span class="d">Potência Utilizada</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">Pot<sub>d</sub></span> <span class="u">[W]</span> <span class="d">Potência Dissipada</span>
+                            </li>
+                            <li>
+                                <span class="n">E<sub>c</sub></span> <span class="u">[J]</span> <span class="d">Energia Cinética</span>
+                            </li>
+                            <li>
+                                <span class="n">E<sub>p</sub></span> <span class="u">[J]</span> <span class="d">Energia Potencial</span>
+                            </li>
+                        </ul>
+                        <ul class="tipo2">
+                            <li>
+                                <span class="n">I</span> <span class="u">[Ns]</span> <span class="d">Impulso</span>
+                            </li>
+                            <li>
+                                <span class="n">Q</span> <span class="u">[Kg.m/s]</span> <span class="d">Quantidade de Mov.</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">V<sub>r</sub></span> <span class="u">[m/s<sup>2</sup>]</span> <span class="d">Velocidade Relativa</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">e</span> <span class="d">Restituição da Colisão</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+    
+            <article id="1-3">
+                <h2>Estática</h2>
+                <button class="pure-button toggler menos-simples" data-classe="diff" data-add="#1-3">Mais Simples</button>
+                <button class="pure-button toggler mais-simples" data-classe="diff" data-remove="#1-3">Mais Complexo</button>
+            
+            
+                <div class="pure-g-r">
+                    <div class="pure-u-2-3">
+                        <h3><a name="1-3-1">Sólidos</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                M = F . b
+                                <span class="d">Momento da Força</span>
+                            </li>
+                        </ul>
+                        <h3><a name="1-3-1">Fluidos</a></h3>
+                        <ul class="formulas">
+                            <li>
+                                μ = m / V
+                                <span class="d">Massa Específica</span>
+                            </li>
+                            <li class="menos-simples">
+                                ρ = P / V
+                                <span class="d">Peso Específico</span>
+                            </li>
+                            <li class="menos-simples">
+                                d = m / V<sub>externo</sub>
+                                <span class="d">Densidade</span>
+                            </li>
+                            <li>
+                                p = F / A
+                                <span class="d">Massa Específica</span>
+                            </li>
+                            <li>
+                                p = μ . h . g
+                                <span class="d">Pressão de Uma Coluna de Água</span>
+                            </li>
+                            <li class="menos-simples">
+                                F = p<sub>C</sub> . A
+                                <span class="d">Pressão em uma Parede Plana</span>
+                            </li>
+                            <li>
+                                p<sub>2</sub> - p<sub>1</sub> = μ . g . <span class="menos-simples">Δ</span>h
+                                <span class="d">Teorema de Stevin</span>
+                            </li>
+                            <li class="menos-simples">
+                                F<sub>abs</sub> = u . g . h + p<sub>0</sub>
+                                <span class="d">Pressão Absoluta de um Ponto</span>
+                            </li>
+                            <li class="menos-simples">
+                                F<sub>ef</sub> = u . g . h
+                                <span class="d">Pressão Efetiva de um Ponto</span>
+                            </li>
+                            <li>
+                                h<sub>b</sub> / h<sub>a</sub> = μ<sub>a</sub> / μ<sub>b</sub>
+                                <span class="d">Equilíbrio de Dois Líquidos</span>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <div class="pure-u-1-3">
+                        <ul class="unidades tipo1">
+                            <li>
+                                <span class="n">M</span> <span class="u">[N]</span> <span class="d">Momento</span>
+                            </li>
+                            <li>
+                                <span class="n">b</span> <span class="u">[m]</span> <span class="d">Distância Até Ponto de Equilíbrio</span>
+                            </li>
+                        </ul>
+                        <ul class="unidades tipo2">
+                            <li>
+                                <span class="n">V</span> <span class="u">[m³]</span> <span class="d">Volume</span>
+                            </li>
+                            <li>
+                                <span class="n">μ</span> <span class="u">[kg/m³]</span> <span class="d">Massa Específica</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">d</span> <span class="u">[kg/m³]</span> <span class="d">Massa Específica</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">ρ</span> <span class="u">[N/m³]</span> <span class="d">Peso Específico</span>
+                            </li>
+                            <li>
+                                <span class="n">p</span> <span class="u">[atm]</span> <span class="d">Pressão</span>
+                            </li>
+                            <li>
+                                <span class="n">p<sub>C</sub></span> <span class="u">[atm]</span> <span class="d">Pressão no Centro do Líquido</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article> 
+
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+←

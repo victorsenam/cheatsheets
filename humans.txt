@@ -1,0 +1,13 @@
+Esse projeto foi iniciado por Victor Sena Molero (victorsenam@gmail.com) e compartilhado com a comunidade.
+Agradecimento: Olivia Narazaki
+
+Bibliografia:
+	Tópicos de Física
+		Ricardo Gelou Doca
+		Gualter José Biscuola
+		Newton Villas Bôas
+
+Tecnologia Utilizada
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
+    PureCSS, Sublime Text, GitHub
