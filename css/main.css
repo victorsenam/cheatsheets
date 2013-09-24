@@ -166,10 +166,11 @@ article {
     border-radius: 5px;
     font-style: italic;
     width: 60%;
-    transition: all 1s ease;
+    transition: all .3s ease;
+    cursor: default;
 }
 .unidades li:hover {
-    width: 100%;
+    width: 70%;
 }
 .unidades li .n {
     float: left;
