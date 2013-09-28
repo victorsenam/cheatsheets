@@ -134,7 +134,8 @@ article {
 
 /* Fórmulas */
 .formulas li {
-    margin: .5em;
+    min-width: 80px;
+    margin: .5em 2%;
     list-style: none;
     float: left;
     background-color: #eee;
@@ -152,7 +153,13 @@ article {
 .formulas li .c {
     color: #22AFA2;
 }
-.formulas li:hover .d {
+.formulas:hover {
+    padding-left: 0;
+}
+.formulas:hover li {
+    min-width: 42%;
+}
+.formulas:hover li .d {
     display: inline;
 }
 
