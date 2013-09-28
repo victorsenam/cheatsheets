@@ -124,6 +124,11 @@ article {
 .right {
     float: right;
 }
+.voltar {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
 
 /* Índice */
 .indice .monitor {

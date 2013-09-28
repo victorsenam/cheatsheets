@@ -29,3 +29,13 @@ $(".toggler").click(function () {
     $(add).addClass(classe);
     $(remove).removeClass(classe);
 });
+
+//SmoothScroll
+$("a").click(function (e) {
+	var ref = $(this).attr("href");
+	var ref2 = ref.replace("#", "");
+	if (ref2 != ref) {
+		$("body").scrollTo($("[name=" + ref2 + "]").offset().top, 500);
+		e.preventDefault();
+	}
+});
