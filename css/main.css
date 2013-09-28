@@ -30,12 +30,12 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #aba5f2;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #aba5f2;
     text-shadow: none;
 }
 
