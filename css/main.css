@@ -114,6 +114,18 @@ Cores: http://www.colourlovers.com/palette/363818/flat_against_it_all
 
 /* === Padrões === */
 /* Geral */
+a{
+    text-decoration: none;
+}
+p a {
+    color: #55f;
+}
+h1 * {
+    color: black !important;
+}
+h2 {
+    text-align: center;
+}
 #geral {
     max-width: 1000px;
     margin: 0 auto;
@@ -222,8 +234,40 @@ article:not(.diff) .mais-simples, article.diff .menos-simples {
 div:after, ol:after, form:after, ul:after, dl:after, li:after {content:".";display:block;clear:both;visibility:hidden;height:0;overflow:hidden;}
 
 
-
-
+/* === Página Inicial === */
+#home a {
+    text-align: center;
+}
+#home a.materia {
+    float: left;
+    display: block;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    background-color: #e2e2e2;
+    margin-top: 20px;
+    color: #333;
+}
+#home a.materia:hover {
+    background-color: #d1d1d1;
+    color: black;
+}
+#home div.desc {
+    margin-top: 25px;
+    width: 80%;
+    background-color: #d1d1d1;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+#home p {
+    color: #555;
+}
 
 /* ==========================================================================
    Helper classes
