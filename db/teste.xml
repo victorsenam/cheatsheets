@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet nome="Física">
+	<materia numero="1-1" nome="Cinemática">
+		<parte numero="1" nome="Bases da Cinamática">
+			<f tipo="complexo" nome="Velocidade Escalar Média">V[m] = Δs / Δt</f>
+			<f tipo="simples" nome="Velocidade">V = s / t</f>
+			<u SI="m/s" nome="Velocidade">v</u>
+		</parte>
+		<parte numero="1" nome="M.R.U. e M.R.U.V.">
+			<f nome="Velocidade"> s = s[0] + v[0].t + (a.t{2} / 2) </f>
+		</parte>
+	</materia>
+</cheatsheet>

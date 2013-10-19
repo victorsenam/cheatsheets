@@ -1,0 +1,23 @@
+{
+	fisica: {
+		formulas: [
+			{
+				n: "Velocidade Média",
+				f: "V[m] = Δs / Δt",
+				t: 2
+			},
+			{
+				n: "Velocidade",
+				f: "V = s/t",
+				t: 1
+			}
+		],
+		unidades: [
+			{
+				n: "Velocidade",
+				d: "v",
+				m: "m/s"
+			}
+		]
+	}
+}
