@@ -166,6 +166,7 @@ article {
 .formulas li .d {
     display: none;
     color: #22AFA2;
+    float: right;
 }
 .formulas li .c {
     color: #22AFA2;
