@@ -151,6 +151,9 @@ article {
     padding: 1em;
     background-color: #eee;
 }
+.pure-button.spec {
+    height: 3em;
+}
 
 /* Fórmulas */
 .formulas li {
