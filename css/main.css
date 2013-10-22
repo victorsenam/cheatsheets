@@ -22,6 +22,9 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+* {
+    box-sizing: border-box;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -163,6 +166,9 @@ article {
     overflow: hidden;
     transition: all 1s ease;
 }
+.formulas .dbheight {
+    height: 4em;
+}
 .formulas li .d {
     display: none;
     color: #22AFA2;
@@ -175,10 +181,22 @@ article {
     padding-left: 0;
 }
 .formulas:hover li {
-    min-width: 42%;
+    min-width: 98%;
 }
 .formulas:hover li .d {
     display: inline;
+}
+
+.formulas .rad {
+    position: relative;
+}
+.formulas .rad .radd {
+    position: absolute;
+    left: 0;
+    top: 1.4em;
+    border-top: 1px solid #e86411;
+    width: 100%;
+    text-align: center;
 }
 
 /* Unidades */
@@ -221,7 +239,7 @@ article {
     background-color: #a5b4f2 !important;
 }
 .tipo3 li {
-    background-color: #a5f2b6 !important;
+    background-color: #83d094 !important;
 }
 
 /* Simples ou Complexo */

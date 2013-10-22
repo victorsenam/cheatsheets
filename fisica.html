@@ -28,8 +28,9 @@
             <div class="indice">
                 <ul class="pure-paginator">
                     <li><a class="pure-button spec pure-button-active" data-num="0" href="#">Início</a></li>
-                    <li><a class="pure-button spec" data-num="1-1" href="#">Livro 1</a></li><!-- 
-                    <li><a class="pure-button spec" data-num="2-1" href="#" title="Termologia">2.1</a></li>
+                    <li><a class="pure-button spec" data-num="1" href="#">Livro 1</a></li>
+                    <li><a class="pure-button spec" data-num="2" href="#">Livro 2</a></li>
+                    <!-- 
                     <li><a class="pure-button spec" data-num="2-2" href="#" title="Ondulatória">2.2</a></li>
                     <li><a class="pure-button spec" data-num="2-3" href="#" title="Óptica">2.3</a></li> -->
                 </ul>
@@ -39,7 +40,7 @@
                     <p>Esse site funciona também em celulares e dispositivos móveis.</p>
                     <p>Se faltar alguma fórmula ou existir alguma sugestão, por favor, me avise. Mande um email para <a href="mailto:victosenam@gmail.com">victorsenam@gmail.com</a> ou contribua pelo <a href="http://github.com/VictorSena/cheatsheets">GitHub</a>.</p>
                 </div>
-                <div class="monitor hidden" data-num="1-1">
+                <div class="monitor hidden" data-num="1">
                     <h3> Parte I: Cinemática </h3>
                     <ol>
                         <li><a href="#1-1-1">Bases</a></li>
@@ -64,22 +65,13 @@
                     </ol>
                     <p>O tópico estática dos fluídos não foi abordado. <a href="index.html" target="_blank">Contribua</a>.</p>
                 </div>
-                <div class="monitor hidden" data-num="2-1">
+                <div class="monitor hidden" data-num="2">
                     <h3> Livro II - Parte I: Termologia </h3>
                     <ol>
                         <li><a href="#2-1-1">Temperatura</a></li>
-                    </ol>
-                </div>
-                <div class="monitor hidden" data-num="2-2">
-                    <h3> Livro II - Parte II: Ondulatória </h3>
-                    <ol>
-                        <li><a href="#2-2-1">Movimento Harmônico Simples</a></li>
-                    </ol>
-                </div>
-                <div class="monitor hidden" data-num="2-3">
-                    <h3> Livro II - Parte III: Óptica </h3>
-                    <ol>
-                        <li><a href="#2-3-1">Fundamentos</a></li>
+                        <li><a href="#2-1-2">Calor e Propagação</a></li>
+                        <li><a href="#2-1-3">Calor Sensível e Latente</a></li>
+                        <li><a href="#2-1-4">Gases Perfeitos</a></li>
                     </ol>
                 </div>
             </div>
@@ -556,23 +548,226 @@
 
                 <div class="pure-g-r">
                     <div class="pure-u-2-3">
-                        <h4><a name="1-3-1">Temperatura</a></h4>
+                        <h4><a name="2-1-1">Temperatura</a></h4>
                         <ul class="formulas">
+                            <li class="menos-simples">
+                                G = aϴ + b
+                                <span class="d">Equação Termométrica</span>
+                            </li>
+                            <li class="menos-simples dbheight">
+                                <i class="rad">ϴ<sub>C</sub><i class="radd">5</i></i> = 
+                                <i class="rad">ϴ<sub>F</sub>-32<i class="radd">9</i></i> = 
+                                <i class="rad">ϴ<sub>R</sub><i class="radd">4</i></i>
+                                <span class="d">Conversão Celsius - Fahrenheit - Réamur</span>
+                            </li>
+                            <li class="menos-simples dbheight">
+                                <i class="rad">ϴ<sub>C</sub><i class="radd">100</i></i> = 
+                                <i class="rad">ϴ<sub>F</sub><i class="radd">180</i></i>
+                                <span class="d">Variação Celsius - Fahrenheit</span>
+                            </li>
                             <li>
-                                Fórmula
-                                <span class="d">Descrição</span>
+                                T = ϴ<sub>C</sub>+273
+                                <span class="d">Temperatura Absoluta</span>
+                            </li>
+                            <li class="mais-simples">
+                                0°C = 32°F
+                                <span class="d">Ponto de Gelo Celsius e Fahernheit</span>
+                            </li>
+                            <li class="mais-simples">
+                                100°C = 212°F
+                                <span class="d">Ponto de Vapor Celsius e Fahernheit</span>
                             </li>
                         </ul>
+                        <h4><a name="2-1-2">Calor e Propagação</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                Cal = 1000 cal = 4200 J
+                                <span class="d">Calorias e Joules</span>
+                            </li>
+                            <li class="menos-simples">
+                                Φ = Q / Δt
+                                <span class="d">Fluxo de Calor</span>
+                            </li>
+                            <li class="dbheight">
+                                Φ = k.<i class="rad">A.|Δϴ|<i class="radd">l</i></i>
+                                <span class="d">Lei de Fourier</span>
+                            </li>
+                        </ul>
+                        <h4><a name="2-1-3">Calor Sensível e Latente</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                C = Q / Δϴ
+                                <span class="d">Capacidade Térmica</span>
+                            </li>
+                            <li class="menos-simples">
+                                c = C / m = Q / m.Δϴ
+                                <span class="d">Calor Específico</span>
+                            </li>
+                            <li>
+                                Q = m.c.Δϴ
+                                <span class="d">Calor Sensível</span>
+                            </li>
+                            <li>
+                                |ΣQ<sub>cedido</sub>| = |ΣQ<sub>recebido</sub>|
+                                <span class="d">Sistema Isolado</span>
+                            </li>
+                            <li class="menos-simples">
+                                m.c = E
+                                <span class="d">Equivalente em Água</span>
+                            </li>
+                            <li class="menos-simples">
+                                C<sub>calorímetro</sub> = E c<sub>água</sub>
+                                <span class="d">Calorímetro</span>
+                            </li>
+                            <li>
+                                Q = m L
+                                <span class="d">Calor Latente</span>
+                            </li>
+                            <li class="menos-simples">
+                                m L <sub>s</sub> = M c<sub>liq</sub> (ϴ<sub>s</sub> - ϴ)
+                                <span class="d">Superfusão</span>
+                            </li>
+                        </ul>
+                        <p>Entenda também como ocorrem as mudanças de Estado Físico da matéria.</p>
+                        <h4><a name="2-1-4">Gases Perfeitos</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                n = m / M
+                                <span class="d">Número de Mols</span>
+                            </li>
+                            <li class="menos-simples">
+                                p = F / A
+                                <span class="d">Pressão</span>
+                            </li>
+                            <li class="menos-simples">
+                                p.V = k<sub>1</sub>
+                                <span class="d">Lei de Boyle</span>
+                            </li>
+                            <li class="menos-simples">
+                                V = k<sub>2</sub>.T
+                                <span class="d">Lei de Gay-Lussac</span>
+                            </li>
+                            <li class="menos-simples">
+                                p = k<sub>3</sub>.T
+                                <span class="d">Lei de Charles</span>
+                            </li>
+                            <li>
+                                R = 0,082 [atm.L.mol<sup>-1</sup>.K<sup>-1</sup>]
+                                <span class="d">Constante Universal dos Gases Perfeitos</span>
+                            </li>
+                            <li>
+                                pV = nRT
+                                <span class="d">Clapeyron</span>
+                            </li>
+                            <li class="menos-simples">
+                                p<sub>i</sub> V<sub>i</sub> / T<sub>i</sub> = p<sub>f</sub> V<sub>f</sub> / T<sub>f</sub>
+                                <span class="d">Lei Geral dos Gases</span>
+                            </li>
+                            <li class="menos-simples">
+                                p<sub>m</sub> V<sub>m</sub> / T<sub>m</sub> = (p<sub>1</sub> V<sub>1</sub> / T<sub>1</sub>) + (p<sub>2</sub> V<sub>2</sub> / T<sub>2</sub>) + ...
+                            </li>
+                        </ul>
+                        <p class="menos-simples">Existe Também uma Parte de "Modelo Microscópico de Gás Perfeito" que não parece ser importante</p>
                     </div>
                     <div class="pure-u-1-3">
                         <ul class="unidades tipo1">
                             <li>
-                                <span class="n">x</span> <span class="u">[-]</span> <span class="d">Nome</span>
+                                <span class="n">ϴ</span> <span class="u">[°C, °F, °Ré]</span> <span class="d">Temperatura</span>
+                            </li>
+                            <li>
+                                <span class="n">ϴ<sub>C</sub></span> <span class="u">[°C]</span> <span class="d">Temperatura em Celsius</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">ϴ<sub>F</sub></span> <span class="u">[°F]</span> <span class="d">Temperatura em Fahrenheit</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">ϴ<sub>R</sub></span> <span class="u">[°Ré]</span> <span class="d">Temperatura em Réamour</span>
+                            </li>
+                            <li>
+                                <span class="n">T</span> <span class="u">[K]</span> <span class="d">Temperatura em Kelvins</span>
+                            </li>
+                        </ul>
+                        <ul class="unidades tipo2">
+                            <li>
+                                <span class="n">Φ</span> <span class="u">[cal/s]</span> <span class="d">Fluxo de Calor</span>
+                            </li>
+                            <li>
+                                <span class="n">k</span> <span class="u">[cal.cm/s.cm².°C]</span> <span class="d">Coeficiente de Condutibilidade</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">Q</span> <span class="u">[cal]</span> <span class="d">Quantidade de Calor</span>
+                            </li>
+                            <li>
+                                <span class="u">[J]</span> <span class="d">Joules</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="u">[Cal]</span> <span class="d">Calorias Alimentares</span>
+                            </li>
+                            <li>
+                                <span class="n">A</span> <span class="u">[cm²]</span> <span class="d">Área Transversal</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">l</span> <span class="u">[cm]</span> <span class="d">Comprimento</span>
+                            </li>
+                            <li class="menos-simples">
+                                <span class="n">Δϴ</span> <span class="u">[°C, °F, °Ré]</span> <span class="d">Variação de Temperatura</span>
+                            </li>
+                        </ul>
+                        <ul class="unidades tipo3">
+                            <li>
+                               <span class="n">C</span> 
+                               <span class="u">[cal/°C]</span> 
+                               <span class="d">Capacidade Térmica</span> 
+                            </li>
+                            <li class="mais-simples">
+                                <span class="n">Q</span> <span class="u">[cal]</span> <span class="d">Quantidade de Calor</span>
+                            </li>
+                            <li>
+                               <span class="n">c</span> 
+                               <span class="u">[cal/g°C]</span> 
+                               <span class="d">Calor Específico</span> 
+                            </li>
+                            <li class="menos-simples">
+                               <span class="n">ΣQ</span> 
+                               <span class="u">[cal]</span> 
+                               <span class="d">Somatória de Calores</span> 
+                            </li>
+                            <li class="menos-simples">
+                               <span class="n">E</span> 
+                               <span class="u">[g]</span> 
+                               <span class="d">Equivalente em Água</span> 
+                            </li>
+                            <li>
+                               <span class="n">L</span> 
+                               <span class="u">[cal/g]</span> 
+                               <span class="d">Calor Latente</span> 
+                            </li>
+                        </ul>
+                        <ul class="unidades tipo1">
+                            <li>
+                               <span class="n">n</span> 
+                               <span class="u">[mol]</span> 
+                               <span class="d">Mols de Gás</span> 
+                            </li>
+                            <li>
+                               <span class="n">M</span> 
+                               <span class="u">[g/mol]</span> 
+                               <span class="d">Massa Molar</span> 
+                            </li>
+                            <li class="menos-simples">
+                               <span class="n">k<sub>1, 2 e 3</sub></span> 
+                               <span class="d">Constantes</span> 
+                            </li>
+                            <li>
+                               <span class="n">R</span> 
+                               <span class="u">[atm.L/mol.K]</span> 
+                               <span class="d">Constante Universal</span> 
                             </li>
                         </ul>
                     </div>
                 </div>
             </article>
+            <!--
             <article id="2-2">
                 <h3>Ondulatória</h3>
                 <button class="pure-button toggler menos-simples" data-classe="diff" data-add="#2-2">Mais Simples</button>
@@ -623,6 +818,7 @@
                     </div>
                 </div>
             </article>
+            -->
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
