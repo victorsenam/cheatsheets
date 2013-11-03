@@ -30,17 +30,20 @@
                     <li><a class="pure-button spec pure-button-active" data-num="0" href="#">Início</a></li>
                     <li><a class="pure-button spec" data-num="1" href="#">Livro 1</a></li>
                     <li><a class="pure-button spec" data-num="2" href="#">Livro 2</a></li>
+                    <li><a class="pure-button spec" data-num="3" href="#">Livro 3</a></li>
                     <!-- 
                     <li><a class="pure-button spec" data-num="2-2" href="#" title="Ondulatória">2.2</a></li>
                     <li><a class="pure-button spec" data-num="2-3" href="#" title="Óptica">2.3</a></li> -->
                 </ul>
                 <div class="monitor" data-num="0">
                     <h3> CheatSheet de Física </h3>
+                    <p>É recomendável que se tenha conhecimento sobre todos os tópicos citados no resumo.</p>
                     <p>Esse é um resumo das fórmulas de Física baseado no livro "Tópicos de Física" de Ricardo Helou Doca, Gualter José Biscuola e Newton Villas Bôas. O objetivo é colocar, em uma página simples, da maneira mais fácil possível, as principais fórmulas apresentadas no livro.</p>
                     <p>Esse site funciona também em celulares e dispositivos móveis.</p>
                     <p>Se faltar alguma fórmula ou existir alguma sugestão, por favor, me avise. Mande um email para <a href="mailto:victosenam@gmail.com">victorsenam@gmail.com</a> ou contribua pelo <a href="http://github.com/VictorSena/cheatsheets">GitHub</a>.</p>
                 </div>
                 <div class="monitor hidden" data-num="1">
+                    <h2>Livro 1</h2>
                     <h3> Parte I: Cinemática </h3>
                     <ol>
                         <li><a href="#1-1-1">Bases</a></li>
@@ -66,12 +69,20 @@
                     <p>O tópico estática dos fluídos não foi abordado. <a href="index.html" target="_blank">Contribua</a>.</p>
                 </div>
                 <div class="monitor hidden" data-num="2">
-                    <h3> Livro II - Parte I: Termologia </h3>
+                    <h2>Livro 2</h2>
+                    <h3> Parte I: Termologia </h3>
                     <ol>
                         <li><a href="#2-1-1">Temperatura</a></li>
                         <li><a href="#2-1-2">Calor e Propagação</a></li>
                         <li><a href="#2-1-3">Calor Sensível e Latente</a></li>
                         <li><a href="#2-1-4">Gases Perfeitos</a></li>
+                    </ol>
+                </div>
+                <div class="monitor hidden" data-num="3">
+                    <h2>Livro 3</h2>
+                    <h3> Parte II: Eletrodinâmica </h3>
+                    <ol>
+                        <li><a href="#3-2-1">Eletrodinâmica</a></li>
                     </ol>
                 </div>
             </div>
@@ -252,11 +263,11 @@
                         
                         <h4><a name="1-2-3">Tangencial e Centrípeta</a></h4>
                         <ul class="formulas">
-                            <li>
+                            <li class="menos-simples">
                                 F<sub>t</sub> = m . |a|
                                 <span class="d">Componente Tangencial</span>
                             </li>
-                            <li>
+                            <li class="menos-simples">
                                 F<sub>cp</sub> = m . v<sup>2</sup> / R
                                 <span class="d">Componente Centrípeta</span>
                             </li>
@@ -304,7 +315,7 @@
                                 Pot<sub>u</sub> = Pot<sub>r</sub> - Pot<sub>d</sub> 
                                 <span class="d">Potência Útil</span>
                             </li>
-                            <li>
+                            <li class="menos-simples">
                                 η = Pot<sub>u</sub> / Pot<sub>r</sub> 
                                 <span class="d">Rendimento</span>
                             </li>
@@ -383,7 +394,7 @@
                             <li class="menos-simples">
                                 <span class="n">F<sub>at</sub></span> <span class="u">[N]</span> <span class="d">Força de Atrito</span>
                             </li>
-                            <li>
+                            <li class="menos-simples">
                                 <span class="n">μ</span> <span class="u"></span> <span class="d">Coeficiente de Atrito</span>
                             </li>
                         </ul>
@@ -819,6 +830,71 @@
                 </div>
             </article>
             -->
+            <h2>Livro 3</h2>
+            <article id="3-2">
+                <h3>Eletrodinâmica</h3>
+                <button class="pure-button toggler menos-simples" data-classe="diff" data-add="#3-2">Mais Simples</button>
+                <button class="pure-button toggler mais-simples" data-classe="diff" data-remove="#3-2">Mais Complexo</button>
+
+                <div class="pure-g-r">
+                    <div class="pure-u-2-3">
+                        <h4><a name="3-2-1">Potência</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                P = i.U
+                                <span class="d">Potência Dissipada</span>
+                            </li>
+                            <li class="menos-simples">
+                                P = R.i²
+                                <span class="d">Potência Dissipada (2)</span>
+                            </li>
+                            <li class="menos-simples">
+                                P = U² / R
+                                <span class="d">Potência Dissipada (3)</span>
+                            </li>
+                        </ul>
+                        <h4><a name="3-2-2">Leis de Ohm</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                U = R.i
+                                <span class="d">Primeira Lei de Ohm</span>
+                            </li>
+                            <li>
+                                R = ρ . l/A
+                                <span class="d">Segunda Lei de Ohm</span>
+                            </li>
+                        </ul>
+                        <h4><a name="3-2-3">Associação de Resistores</a></h4>
+                        <ul class="formulas">
+                            <li>
+                                R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + ... + R<sub>n</sub>
+                                <span class="d">Associação em Série</span>
+                            </li>
+                            <li class="menos-simples">
+                                U = U<sub>1</sub> + U<sub>2</sub> + ... + U<sub>n</sub>
+                                <span class="d">Associação em Série</span>
+                            </li>
+                            <li class="menos-simples">
+                                i = i<sub>1</sub> + i<sub>2</sub> + ... + i<sub>n</sub>
+                                <span class="d">Associação em Paralelo</span>
+                            </li>
+                            <li>
+                                1/R<sub>eq</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>
+                                <span class="d">Associação em Paralelo</span>
+                            </li>
+                        </ul>
+                        <h4><a name="3-2-4">Medições</a></h4>
+                        <p>Voltímetros São Ligados em Paralelo e medem a ddp entre o primeiro nó e o segundo. Amperímetros são ligados em série e medem a corrente do ponto.</p>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <ul class="unidades tipo1">
+                            <li>
+                                <span class="n">x</span> <span class="u">[-]</span> <span class="d">Nome</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
